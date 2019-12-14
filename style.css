@@ -109,17 +109,6 @@ input {
   margin: 0.5% 0.5% 0.5% 1%;
 }
 
-output {
-  border: 2px solid #d4d0ab;
-  background: #fff;
-  text-align: left;
-  border-radius: 10px;
-  padding: 1%;
-  font-size: 1.13rem;
-  line-height: 1.8;
-  margin: 0.5% 0.5% 0.5% 1%;
-}
-
 #submit {
   border: 1px solid #141E30;
   color: #f6a21d;
@@ -162,8 +151,11 @@ output {
   color: #fff; 
 }
 
-output {
-  display: inline;
+#output {
+  background-color: #d4d0ab;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 1%;
 }
 
 #reset {

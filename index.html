@@ -3,26 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Milestone1 from @PaulaSantos: HTML document.">
+    <meta name="description" content="Milestone 3 FizzBuzz.">
     <meta name="keywords" content="HTML, CSS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Paula Angeriz-Santos">
-    <title>Paula Angeriz-Santos - Milestone i-ii</title>
+    <title>Paula Angeriz-Santos - Milestone 3</title>
     <link href="./style.css" rel="stylesheet">
-    <script>
-        function fizzBuzz() {
-            for (let i = 1; i <= 100; i++) {
-                if (i % 15 == 0)
-                    console.log('FizzBuzz');
-                else if (i % 3 == 0)
-                    console.log('Fizz');
-                else if (i % 5 == 0)
-                    console.log('Buzz');
-                else
-                    console.log(i);
-            }
-        }
-    </script>
+    <script src="./myscript.js"></script>
+    <!--<script>
+        
+    </script>-->
 </head>
 
 <body>
@@ -40,25 +30,15 @@
             <h1>Milestone 3</h1>
         </section>
         <section class="FizzBuzz">
-            <h2 id="contact">FizzBuzz1:</h2>
-            <form action="/index.html" method="GET" class="form-example">
-                <div>
-                    <label for="number">Choose a number from 1 to 100:</label>
-                    <input type="number" id="FizzBuzz" step="1" name="number" min="1" max="100">
-                </div>
-                <div>
-                    <button type="submit" id="submit" action="submit" onClick="fizzBuzz()">Calculate!</button>
-                </div>
-                <div>
-                    <input id="reset" type="reset" value="Reset">
-                </div>
-            </form>
-            <h2 id="contact">FizzBuzz2:</h2>
+            <h2 id="contact">FizzBuzz:</h2>
             <form>
                 <label for="number">Choose a number from 1 to 100:</label>
-                <input type="number" id="FizzBuzz" step="1" name="number" min="1" max="100"><input type="button"
-                    id="button" onClick="fizzBuzz('')" value="Calculate!">
-                <output return="fizzBuzz('')">Result!</output>
+                <input type="number" id="input" name="number" min="1" max="100">
+                <input type="button" onclick="fizzBuzz(document.getElementById('input').value)" id="button"
+                    value="Calculate!">
+                <!--<input type="button" onclick="fizzBuzz()" id="button" value="Calculate!">-->
+                <input id="reset" type="reset" value="Reset"><br>
+                <p id="output">Result:<br></p>
             </form>
         </section>
 
