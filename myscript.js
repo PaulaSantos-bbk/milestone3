@@ -1,4 +1,13 @@
-function fizzBuzz(i) {
+const fizzBuzz = function (n) {
+    let result = "";
+    if (n % 3 === 0) result += "Fizz";
+    if (n % 5 === 0) result += "Buzz";
+    if (n % 3 && n % 5) result += n;
+    return result;
+}
+
+
+/*function fizzBuzz(i) {
     if (i % 15 === 0) {
         return 'FizzBuzz';
     }
@@ -12,6 +21,7 @@ function fizzBuzz(i) {
         return i;
     }
 }
+*/
 /*function fizzBuzz() {
     for (let i = 1; i <= 100; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
