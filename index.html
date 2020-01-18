@@ -10,9 +10,7 @@
     <title>Paula Angeriz-Santos - Milestone 3</title>
     <link href="./style.css" rel="stylesheet">
     <script src="./myscript.js"></script>
-    <!--<script>
-        
-    </script>-->
+
 </head>
 
 <body>
@@ -30,6 +28,15 @@
             <h1>Milestone 3</h1>
         </section>
         <section class="FizzBuzz">
+
+            <h2 id="contact">New form:</h2>
+            <form id="fizzForm">
+                <label for="number">Enter a number:</label>
+                <input type="number" id="fizzValue" name="number" min="1" max="20">
+                <input type="button" id="submitBtn" value="Submit">
+                <input id="reset" type="reset" value="Reset">
+            </form>
+
             <h2 id="contact">FizzBuzz:</h2>
             <form>
                 <label for="number">Choose a number from 1 to 100:</label>
@@ -40,10 +47,27 @@
                 <input id="reset" type="reset" value="Reset"><br>
                 <p id="output">Result:<br></p>
             </form>
+
         </section>
-
-
     </main>
+    <script>
+        const form = document.getElementById('fizzForm')
+        const input = document.getElementById('fizzValue')
+        console.log("IT WORKS!")
+        console.log(form, input)
+        const submitBtn = document.getElementById('submitBtn')
+        const submitHandler = function (event) {
+            event.preventDefault()
+            console.log(event, event.target)
+        }
+        submitBtn.onclick = submitHandler
+        // equivalent to
+        // submit.addEventListener("onclick", submitHandler)
+
+        /*console.log('it works!')
+        console.log(form, input)*/
+    </script>
+
 </body>
 
 </html>
